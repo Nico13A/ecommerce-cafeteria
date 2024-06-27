@@ -1,0 +1,58 @@
+.hero {
+    grid-area: hero;
+    background-image: url(../img/tyler-nix-J4wx-1_5n2M-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+.hero__container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.hero__title {
+    text-align: center;
+    color: var(--cor-de-title);
+}
+
+.hero__title__main {
+    font-size: 6em;
+    font-weight: 800;
+    letter-spacing: 0.2em;
+}
+
+.hero__title__subtitle {
+    font-size: 1.2em;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+}
+
+.hero__buttons {
+    display: flex;
+    gap: 2.5em;
+}
+
+.hero__button {
+    display: block;
+    background-color: var(--cor-de-boton);
+    color: var(--cor-de-menu);
+    text-decoration: none;
+    letter-spacing: 0.2em;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 500;
+    padding: 1em 2em;
+    border-radius: 1em;
+    width: 12em;
+    transition: transform 0.3s ease-in-out;
+}
+
+.hero__button:hover {
+    background-color: var(--cor-de-boton-hover);
+    transform: scale(1.2);
+}

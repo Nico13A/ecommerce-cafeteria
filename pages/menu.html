@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Nunou</title>
+    <link rel="stylesheet" href="./../css/pages/menu/estilos.css">
+    <script src="https://kit.fontawesome.com/7b6132a987.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="page-container">
+
+        <nav class="menu">
+            <ul class="menu__list">
+                <li class="menu__list__item menu__list__item--logo"><a href="./../index.html"><img src="../img/logo.png" alt="Logo de cafetería"></a></li>
+                <li class="menu__list__item"><a href="./menu.html">MENÚ</a></li>
+                <li class="menu__list__item"><a href="./cafe.html">NUESTRO CAFÉ</a></li>
+                <li class="menu__list__item"><a href="./nosotros.html">SOBRE NOSOTROS</a></li>
+                <li class="menu__list__item"><a href="./contacto.html">CONTACTO</a></li>
+                <li class="menu__list__item menu__list__item--carrito" id="carrito">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span id="contador"></span>
+                </li>
+            </ul>
+        </nav>
+
+        <main class="hero">
+
+            <h2 class="hero__title">Bebidas y cafés</h2>
+        
+            <section class="hero__section hero__section--cafeteria">
+                <h3 class="hero__section__title">Cafetería</h3>
+                <div class="hero__section__item">
+                    <h4>Café Espresso Método Barista</h4>
+                    <p>El tiempo de extracción y la temperatura hacen la diferencia.</p>
+                </div>
+                <div class="hero__section__item">
+                    <h4>Espresso</h4>
+                    <p>Café intenso de espuma color avellana.</p>
+                </div>
+                <div class="hero__section__item">
+                    <h4>Medio</h4>
+                    <p>Café expresso o latte (120 ml).</p>
+                </div>
+                <div class="hero__section__item">
+                    <h4>Doppio</h4>
+                    <p>Espresso doble (60 ml).</p>
+                </div>
+                <div class="hero__section__item">
+                    <h4>Macchiato</h4>
+                    <p>Café "manchado" o cortado con leche caliente espumada.</p>
+                </div>
+                <div class="hero__section__item">
+                    <h4>Latte</h4>
+                    <p>Espuma sedosa de leche con un espresso intenso, el balance perfecto.</p>
+                </div>
+                <div class="hero__section__item">
+                    <h4>Cappuccino</h4>
+                    <p>Leche espumada y espresso con finish de cacao o canela (180 ml).</p>
+                </div>
+                <div class="hero__section__item">
+                    <h4>Caramel Croccantino</h4>
+                    <p>Café, crema chantilly, caramelo y praliné.</p>
+                </div>
+                <div class="hero__section__item">
+                    <h4>Nocciolatto</h4>
+                    <p>Café, nutella, crema chantilly y cacao.</p>
+                </div>
+                <div class="hero__section__item">
+                    <h4>Irlandes Nunou</h4>
+                    <p>Café con whisky y leche condensada (adicional leche de almendras).</p>
+                </div>
+            </section>
+
+            <section class="hero__section hero__section--chocolate">
+                <h3 class="hero__section__title">Chocolate</h3>
+                <div class="hero__section__item">
+                    <h4>Hot Chocolate</h4>
+                    <p>Chocolate caliente, receta Nunou, sabroso de textura espesa.</p>
+                </div>
+                <div class="hero__section__item">
+                    <h4>Cold Chocolate</h4>
+                    <p>Chocolatada batida con cacao amargo y azúcar mascabo.</p>
+                </div>
+            </section>
+
+            <section class="hero__section hero__section--franouccino">
+                <h3 class="hero__section__title">Franouccinos</h3>
+                <div class="hero__section__item">
+                    <h4>Batidos a base de café expresso</h4>
+                    <ul>
+                        <li>Dulce de leche</li>
+                        <li>Chocolate chipa</li>
+                    </ul>
+                </div>
+                <div class="hero__section__item">
+                    <h4>Batidos a base de Crema Chantilly</h4>
+                    <ul>
+                        <li>Lemon cream</li>
+                        <li>Frutos rojos</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section class="hero__section hero__section--te">
+                <h3 class="hero__section__title">Té en hebras</h3>
+                <div class="hero__section__item">
+                    <h4>Caricias para el alma</h4>
+                    <p>Té negro, bergamota, grosellas y jazmín.</p>
+                </div>
+                <div class="hero__section__item">
+                    <h4>A mi Laura</h4>
+                    <p>Té con frutillas, frutas de pasión y pétalos de rosa.</p> 
+                </div>
+                <div class="hero__section__item">
+                    <h4>Bendito Lunes</h4>
+                    <p>Té verde alimonado, con cedrón, tilo y manzanilla.</p>
+                </div>
+            </section>
+
+            <section class="hero__section hero__section--jugos">
+                <h3 class="hero__section__title">Jugos y Licuados</h3>
+                <ul>
+                    <li><h5>Naranja</h5></li>
+                    <li><h5>Manzana Red Delicious Made in Patagonia</h5></li>
+                    <li><h5>Zanahoria, jengibre, polen, azúcar integral</h5></li>
+                    <li><h5>Limonada, menta, limón y jengibre</h5></li>
+                    <li><h5>Limonada de frutos rojos</h5></li>
+                    <li><h5>Limonada de zanahorias</h5></li>
+                    <li><h5>Banana & leche (especial niños)</h5></li>
+                </ul>
+            </section>
+
+            <section class="hero__section hero__section--batidos">
+                <h3 class="hero__section__title">Batidos energéticos</h3>
+                <ul>
+                    <li>Banana, jengibre, azúcar mascabo y nueces, con leche de almendras.</li>
+                    <li>Chia, hibiscus y manzana roja con jugo de naranjas.</li>
+                    <li>Arándanos, coco y nueces activadas.</li>
+                </ul>
+            </section>
+
+            <h2 class="hero__title hero__title--comida">Comidas</h2>
+
+            <section class="hero__section hero__section--morning-afternoon">
+                <h3 class="hero__section__title">Mañana & Tarde</h3>
+                <div class="hero__section__item">
+                    <h4>Avocado toast</h4>
+                    <p>Tostada gruesa de pan de masa madre con palta pisada al momento.</p>
+                </div>
+                <div class="hero__section__item">
+                    <h4>Avo salmón toast</h4>
+                    <p>Tostada de pan de masa madre con palta, semillas crocantes y salmón ahumado.</p>
+                </div>
+                <div class="hero__section__item">
+                    <h4>Huevos revueltos con bacon</h4>
+                    <p>Acompañados de dos tostadas de pan de masa madre.</p>
+                </div>
+                <div class="hero__section__item">
+                    <h4>Nunou sandwich</h4>
+                    <p>Mix de quesos y jamón cocido natural en pan orgánico media barra rústica integral (adicional pasta).</p>
+                </div>
+                <div class="hero__section__item">
+                    <h4>Tostado</h4>
+                    <p>Jamón y queso en pan de miga.</p>
+                </div>
+                <div class="hero__section__item">
+                    <h4>Croissant sandwich</h4>
+                    <p>Sandwich de jamón y queso en croissant.</p>
+                </div>
+                <div class="hero__section__item">
+                    <h4>Medialunas</h4>
+                    <p>Dulces almibaradas.</p>
+                </div>
+                <div class="hero__section__item">
+                    <h4>Yogurt bowl</h4>
+                    <p>Yogurt natural (hecho en nuestra cocina), granola casera, frutas de estación y miel.</p>
+                </div>
+                <div class="hero__section__item">
+                    <h4>Tostadas de pan de masa madre</h4>
+                    <p>Dulce de leche, cream cheese, dulce Nunou y pasta de maní.</p>
+                </div>
+            </section>
+
+            <section class="hero__section hero__section--desayuno-merienda">
+                <h3 class="hero__section__title">Desayunos y meriendas</h3>
+                <div class="hero__section__item">
+                    <h4>Healthy</h4>
+                    <p>Café o te, bowl de yogur natural, frutas y granola, jugo de naranja y limonada o batido energético.</p>
+                </div>
+                <div class="hero__section__item">
+                    <h4>Clásico</h4>
+                    <p>Café o te, tostadas de pan de masa madre, cream cheese o manteca, dulce Nunou y dulce de leche o dulce de frutas patagónicas.</p>
+                </div>
+                <div class="hero__section__item">
+                    <h4>Francés</h4>
+                    <p>Café o té, vienoisserie francesa (croissant, pain au chocolat, roll de pastelera, medialunas). Dos a elección.</p>
+                </div>
+                <div class="hero__section__item">
+                    <h4>Breakfast sandwich</h4>
+                    <p>Café o té, Nunou sandwich o tostado, jugo de naranja y limonada o batido energético.</p>
+                </div>
+                <div class="hero__section__item">
+                    <h4>Para compartir</h4>
+                    <p>2 cafés, bowl de yogurt, frutas y granola, 2 jugos exprimidos de naranja, tostado de jamón y queso, 2 medialunas, pain au chocolat.</p>
+                </div>
+                <div class="hero__section__item hero__sectiom__item--especial">
+                    <h4>Brunch</h4>
+                    <p>Café, jugo de naranja. Avocado salmon toast, huevos revueltos, jugo natural, bowl de yogur y frutas, queso, frutas secas, rebanada de budín y tostaditas.</p>
+                </div>
+            </section>
+
+            <section class="hero__section hero__section--platos">
+                <h3 class="hero__section__title">Platos de noche</h3>
+                <ul>
+                    <li><h5>Risotto de hongos silvestres</h5></li>
+                    <li><h5>Curry de vegetales y pollo guisados en leche de coco acompañado de arroz yamani</h5></li>
+                    <li><h5>Salmón a la plancha con vegetales y pesto de kale</h5></li>
+                    <li><h5>Arroz salteado de mar con mejillones, langostinos, calamar y salmón rosado</h5></li>
+                </ul>
+            </section>
+
+        </main>
+
+        <div id="cart-shopping">
+            <div class="shop">
+                <div class="shop__close">
+                    <i class="fa-solid fa-x" id="close-button"></i>
+                    <h3>Carrito</h3>
+                </div>
+                <div class="shop__products">
+
+                </div>
+                <div class="shop__footer">
+                    <p>Total: <span id="total-a-pagar"></span></p>
+                    <button id="pagar">Finalizar compra</button>
+                    <a href="./carrito.html">Ir al carrito</a>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="footer__location">
+                <h4>Ubicación</h4>
+                <div class="footer__location__adress">
+                    <p>España 175, Cipolletti, Argentina</p>
+                    <a href="https://maps.app.goo.gl/BBpfXp3VfF6pP6ub7" target="_blank"><i class="fa-solid fa-location-pin"></i></a>
+                </div>
+            </div>
+            <div class="footer__social">
+                <ul class="footer__list">
+                    <li class="footer__list__item"><a href="https://www.instagram.com/cafenunou/?hl=es" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li class="footer__list__item"><a href="https://www.facebook.com/CafeNunou/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a></li>
+                    <li class="footer__list__item"><a href="https://api.whatsapp.com/send?phone=02996226141" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <script src="../js/app.js" type="module"></script>
+</body>
+</html>

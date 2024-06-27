@@ -1,0 +1,152 @@
+[
+    {
+        "idProducto": 1,
+        "nombre": "Café Molido Tipo Italiano",
+        "peso": 250,
+        "precio": 10500,
+        "tipo": "Molido",
+        "img": "https://cafemartinez.vtexassets.com/arquivos/ids/155514-800-auto?v=637463658756670000&width=800&height=auto&aspect=true",
+        "descripcion" : "Variedad de café molido Tipo Italiano de 250g de Café Martínez. Pack reforzado especialmente para conservar el café. Recomendado para cafeteras de filtro. No se recomienda para cafetera express",
+        "cantidad": 1
+    },
+    {
+        "idProducto": 2,
+        "nombre": "Café Molido Selecto",
+        "peso": 250,
+        "precio": 12950,
+        "tipo": "Molido",
+        "img": "https://cafemartinez.vtexassets.com/arquivos/ids/155518-800-auto?v=637463658768230000&width=800&height=auto&aspect=true",
+        "descripcion": "Variedad de café molido Selecto de 250g de Café Martínez. Pack reforzado especialmente para conservar el café. Recomendado para cafeteras de filtro. No se recomienda para cafetera express.",
+        "cantidad": 1
+    },
+    {
+        "idProducto": 3,
+        "nombre": "Café Molido Colombia",
+        "peso": 250,
+        "precio": 18500,
+        "tipo": "Molido",
+        "img": "https://cafemartinez.vtexassets.com/arquivos/ids/155515-800-auto?v=637463658759930000&width=800&height=auto&aspect=true",
+        "descripcion": "Variedad de café molido Colombia de 250g de Café Martínez. Pack reforzado especialmente para conservar el café. Recomendado para cafeteras de filtro. No se recomienda para cafetera express.",
+        "cantidad": 1
+    },
+    {
+        "idProducto": 4,
+        "nombre": "Café Molido Moka",
+        "peso": 250,
+        "precio": 10800,
+        "tipo": "Molido",
+        "img": "https://cafemartinez.vtexassets.com/arquivos/ids/155516-800-auto?v=637463658762430000&width=800&height=auto&aspect=true",
+        "descripcion": "Variedad de café molido Moka de 250g de Café Martínez. Pack reforzado especialmente para conservar el café. Recomendado para cafeteras de filtro. No se recomienda para cafetera express.",
+        "cantidad": 1
+    },
+    {
+        "idProducto": 5,
+        "nombre": "Café Molido Descafeinado",
+        "peso": 250,
+        "precio": 22500,
+        "tipo": "Molido",
+        "img": "https://cafemartinez.vtexassets.com/arquivos/ids/155733-800-auto?v=637540894153200000&width=800&height=auto&aspect=true",
+        "descripcion": "Café tostado natural en grano de especialidad, elaboración propia. Recomendado para cafeteras de filtro. No se recomienda para cafetera express.",
+        "cantidad": 1
+    },
+    {
+        "idProducto": 6,
+        "nombre": "Café Molido Brasil",
+        "peso": 250,
+        "precio": 10500,
+        "tipo": "Molido",
+        "img": "https://cafemartinez.vtexassets.com/arquivos/ids/155517-800-auto?v=637463658764930000&width=800&height=auto&aspect=true",
+        "descripcion": "Variedad de café molido Brasil de 250g de Café Martínez. Pack reforzado especialmente para conservar el café. Recomendado para cafeteras de filtro. No se recomienda para cápsula recargable o cafetera express.",
+        "cantidad": 1
+    },
+    {
+        "idProducto": 7,
+        "nombre": "Café Molido Brasil",
+        "peso": 500,
+        "precio": 20500,
+        "tipo": "Molido",
+        "img": "https://cafemartinez.vtexassets.com/arquivos/ids/155522-800-auto?v=637463658780130000&width=800&height=auto&aspect=true",
+        "descripcion": "Variedad de café molido Brasil de Café Martínez. Pack reforzado especialmente para conservar el café de 500g. Recomendado para cafeteras de filtro. No se recomienda para cafetera express.",
+        "cantidad": 1
+    },
+    {
+        "idProducto": 8,
+        "nombre": "Café Molido Tipo Italiano",
+        "peso": 500,
+        "precio": 20500,
+        "tipo": "Molido",
+        "img": "https://cafemartinez.vtexassets.com/arquivos/ids/155523-800-auto?v=637463658782630000&width=800&height=auto&aspect=true",
+        "descripcion": "Variedad de café molido Tipo Italiano de 500g de Café Martínez. Pack reforzado especialmente para conservar el café. Recomendado para cafeteras de filtro. No se recomienda para cafetera express.",
+        "cantidad": 1
+    },
+    {
+        "idProducto": 9,
+        "nombre": "Café Molido Selecto",
+        "peso": 500,
+        "precio": 25200,
+        "tipo": "Molido",
+        "img": "https://cafemartinez.vtexassets.com/arquivos/ids/155537-800-auto?v=637463658821500000&width=800&height=auto&aspect=true",
+        "descripcion": "Variedad de café molido Selecto de 500g de Café Martínez. Pack reforzado especialmente para conservar el café. Recomendado para cafeteras de filtro. No se recomienda para cafetera express.",
+        "cantidad": 1 
+    },
+    {
+        "idProducto": 10,
+        "nombre": "Café Molido Moka",
+        "peso": 500,
+        "precio": 20500,
+        "tipo": "Molido",
+        "img": "https://cafemartinez.vtexassets.com/arquivos/ids/155536-800-auto?v=637463658819000000&width=800&height=auto&aspect=true",
+        "descripcion": "Variedad de café molido Moka de 500g de Café Martínez. Pack reforzado especialmente para conservar el café. Recomendado para cafeteras de filtro. No se recomienda para cafetera express.",
+        "cantidad": 1 
+    },
+    {
+        "idProducto": 11,
+        "nombre": "Café en grano Tipo Italiano",
+        "peso": 1000,
+        "precio": 61180,
+        "tipo": "Grano",
+        "img": "https://cafemartinez.vtexassets.com/arquivos/ids/155511-800-auto?v=637463658748230000&width=800&height=auto&aspect=true",
+        "descripcion": "Variedad de café en grano tostado Tipo Italiano de 1kg de Café Martínez. Pack reforzado especialmente para conservar el café.",
+        "cantidad": 1 
+    },
+    {
+        "idProducto": 12,
+        "nombre": "Café en grano Brasil",
+        "peso": 1000,
+        "precio": 57000,
+        "tipo": "Grano",
+        "img": "https://cafemartinez.vtexassets.com/arquivos/ids/155507-800-auto?v=637463658733670000&width=800&height=auto&aspect=true",
+        "descripcion": "Variedad de café en grano Brasil de 1kg de Café Martínez. Pack reforzado especialmente para conservar el café.",
+        "cantidad": 1 
+    },
+    {
+        "idProducto": 13,
+        "nombre": "Café en grano Selecto",
+        "peso": 1000,
+        "precio": 65360,
+        "tipo": "Grano",
+        "img": "https://cafemartinez.vtexassets.com/arquivos/ids/155506-800-auto?v=637463658729300000&width=800&height=auto&aspect=true",
+        "descripcion": "Variedad de café en grano tostado selecto de 1kg de Café Martínez. Pack reforzado especialmente para conservar el café.",
+        "cantidad": 1 
+    },
+    {
+        "idProducto": 14,
+        "nombre": "Café en grano Colombia",
+        "peso": 1000,
+        "precio": 77140,
+        "tipo": "Grano",
+        "img": "https://cafemartinez.vtexassets.com/arquivos/ids/155508-800-auto?v=637463658737430000&width=800&height=auto&aspect=true",
+        "descripcion": "Variedad de café en grano Colombia de 1kg de Café Martínez. Pack reforzado especialmente para conservar el café.",
+        "cantidad": 1 
+    },
+    {
+        "idProducto": 15,
+        "nombre": "Café en grano Moka",
+        "peso": 1000,
+        "precio": 61180,
+        "tipo": "Grano",
+        "img": "https://cafemartinez.vtexassets.com/arquivos/ids/155510-800-auto?v=637463658745100000&width=800&height=auto&aspect=true",
+        "descripcion": "Variedad de café en grano Moka de 1kg de Café Martínez. Pack reforzado especialmente para conservar el café.",
+        "cantidad": 1 
+    }
+]

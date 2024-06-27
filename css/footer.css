@@ -1,0 +1,64 @@
+.footer {
+    grid-area: footer;
+    background-color: var(--cor-de-title);
+    color: var(--cor-de-footer);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer__location {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 20em;
+}
+
+.footer__location h4, .footer__location__adress p {
+    letter-spacing: 0.1em;
+}
+
+.footer__location h4 {
+    font-size: 1.2em;
+}
+
+.footer__location__adress {
+    display: flex;
+    gap: 1.2em;
+}
+
+.footer__location__adress p {
+    font-size: 1em;
+}
+
+.footer__location__adress a i {
+    color: var(--cor-de-footer);
+    font-size: 1em;
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer__location__adress a i:hover {
+    transform: scale(1.4);
+}
+
+.footer__social {
+    width: 20em;
+}
+
+.footer__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+    list-style: none;
+}
+
+.footer__list__item a i {
+    color: var(--cor-de-footer);
+    font-size: 2em;
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer__list__item a i:hover {
+    transform: scale(1.4);
+}

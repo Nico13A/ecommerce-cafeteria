@@ -1,0 +1,87 @@
+/* MENÚ */
+
+.hero {
+    max-width: 80em;
+    margin: 10em auto 0;
+    padding: 4em 0;
+}
+
+.hero__title {
+    font-size: 4.2em;
+    text-transform: uppercase;
+    margin-bottom: 0.5em;
+    font-weight: 900;
+    padding: 40px;
+    text-align: center;
+    letter-spacing: 2px;
+    color: var(--cor-de-title);
+}
+
+.hero__section {
+    margin-bottom: 2em;
+}
+
+.hero__section__title {
+    font-size: 2.5em;
+    font-weight: 900;
+    padding: 10px 0;
+    margin-bottom: 0.8em;
+    text-transform: uppercase;
+    color: var(--cor-de-title);
+}
+
+.hero__section__item {
+    padding: 0 0 2em;
+    border-bottom: 0.1em solid var(--cor-de-title);
+    margin-bottom: 2em;
+}
+
+.hero__section__item h4 {
+    font-size: 1.8em;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: var(--cor-de-subtitle);
+}
+
+.hero__section__item p {
+    font-size: 1.6em;
+    color: var(--cor-de-subtitle);
+}
+
+.hero__section__item ul, .hero__section--jugos ul, .hero__section--batidos ul, .hero__section--platos ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 4em;
+}
+
+.hero__section__item ul li, .hero__section--jugos ul li, .hero__section--batidos ul li, .hero__section--platos ul li {
+    font-size: 1.6em;
+    color: var(--cor-de-subtitle);
+    font-style: italic;
+    letter-spacing: 1px;
+}
+
+.hero__section--jugos ul li, .hero__section--platos ul li {
+    color: /*#beada2*/ var(--cor-de-footer);
+}
+
+.hero__section--jugos ul li h5, .hero__section--platos ul li h5 {
+    font-size: 18px;
+}
+
+.hero__section--batidos ul li {
+    color: var(--cor-de-subtitle);
+    font-style: normal;
+    font-size: 1.8em;
+    font-weight: 500;
+}
+
+.hero__sectiom__item--especial h4 {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.hero__title--comida {
+    margin-top: 40px;
+}

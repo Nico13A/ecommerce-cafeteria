@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café prueba</title>
+    <link rel="stylesheet" href="./../css/pages/cafe/estilos.css">
+    <script src="https://kit.fontawesome.com/7b6132a987.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="page-container">
+
+        <nav class="menu">
+            <ul class="menu__list">
+                <li class="menu__list__item menu__list__item--logo"><a href="./../index.html"><img src="../img/logo.png" alt="Logo de cafetería"></a></li>
+                <li class="menu__list__item"><a href="./menu.html">MENÚ</a></li>
+                <li class="menu__list__item"><a href="./cafe.html">NUESTRO CAFÉ</a></li>
+                <li class="menu__list__item"><a href="./nosotros.html">SOBRE NOSOTROS</a></li>
+                <li class="menu__list__item"><a href="./contacto.html">CONTACTO</a></li>
+                <li class="menu__list__item menu__list__item--carrito" id="carrito">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span id="contador"></span>
+                </li>
+            </ul>
+        </nav>
+
+        <main class="hero">
+        
+            <section class="hero__section">
+                <div class="hero__section__container">
+                    <h2 class="hero__section__title">Nuestro Café</h2>
+                </div>
+            </section>
+
+            <section class="hero__section hero__section--nav">
+                <div class="hero__section__container">
+                    <button class="hero__button" id="todosLosProductos">Todos</button>
+                    <button class="hero__button" id="cafeEnGrano">Café en grano</button>
+                    <button class="hero__button" id="cafeMolido">Café molido</button>
+                    <button class="hero__button hero__button--peso" id="peso">
+                        <span>Peso</span>
+                        <ul>
+                            <li>250g</li>
+                            <li>500g</li>
+                            <li>1kg</li>
+                        </ul>
+                    </button>
+                </div>
+            </section>
+
+            <section class="hero__section hero__section--products" id="productos">
+            </section>
+
+            <section class="hero__section hero__section--modal" id="modal-container">
+                <div class="modal" id="modal">
+                    <i class="fa-solid fa-x modal__close" id="modal-close"></i>
+                    <img src="" alt="" class="modal__img" id="modal-img">
+                    <div class="modal__content">
+                        <span class="modal__content__type"></span>
+                        <h2 class="modal__content__title" id="modal-title"></h2>
+                        <p class="modal__content__description" id="modal-description"></p>
+                        <span class="modal__content__enjoy"></span>
+                        <button id="boton-comprar" class="modal__content__button"></button>
+                    </div>
+                </div>
+            </section>
+
+
+        </main>
+
+        <div id="cart-shopping">
+            <div class="shop">
+                <div class="shop__close">
+                    <i class="fa-solid fa-x" id="close-button"></i>
+                    <h3>Carrito</h3>
+                </div>
+                <div class="shop__products">
+
+                </div>
+                <div class="shop__footer">
+                    <p>Total: <span id="total-a-pagar"></span></p>
+                    <button id="pagar">Finalizar compra</button>
+                    <a href="./carrito.html">Ir al carrito</a>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="footer__location">
+                <h4>Ubicación</h4>
+                <div class="footer__location__adress">
+                    <p>España 175, Cipolletti, Argentina</p>
+                    <a href="https://maps.app.goo.gl/BBpfXp3VfF6pP6ub7" target="_blank"><i class="fa-solid fa-location-pin"></i></a>
+                </div>
+            </div>
+            <div class="footer__social">
+                <ul class="footer__list">
+                    <li class="footer__list__item"><a href="https://www.instagram.com/cafenunou/?hl=es" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li class="footer__list__item"><a href="https://www.facebook.com/CafeNunou/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a></li>
+                    <li class="footer__list__item"><a href="https://api.whatsapp.com/send?phone=02996226141" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <script src="../js/productos.js" type="module"></script>
+    <script src="../js/app.js" type="module"></script>
+</body>
+</html>

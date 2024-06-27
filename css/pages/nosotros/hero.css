@@ -1,0 +1,91 @@
+.hero {
+    margin: 10em 0 0;
+    /*padding: 4em 0;*/
+}
+
+.hero__section {
+    width: 100%;
+    height: 46em;
+}
+
+.hero__section--lugar {
+    background-image: url("../../../img/99-films-yr9l_xQPDL0-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.hero__section__container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hero__section__title {
+    font-size: 4.4em;
+    line-height: 1.5;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 40px;
+    letter-spacing: 2px;
+    color: var(--cor-de-title);
+}
+
+.hero__section--info {
+    height: 23em;
+}
+
+.hero__section--info .hero__section__container .hero__section__paragraph {
+    font-size: 1.8em;
+    color: var(--cor-de-title);
+    font-weight: 500;
+}
+
+.hero__section--historia {
+    background-image: url("../../../img/lazarescu-alexandra-AZJrf0D6Vvo-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 92em;
+}
+
+.hero__section--historia .hero__section__subtitle, .hero__section--historia .hero__section__paragraph {
+    color: var(--cor-de-menu);
+}
+
+.hero__section__subtitle {
+    font-size: 3.8em;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+.hero__section__paragraph {
+    font-size: 1.6em;
+    padding: 0 200px;
+    line-height: 1.6;
+}
+/*
+.hero__section--mision {
+    height: 23em;
+}
+*/
+.hero__section--equipo {
+    background-image: url("../../../img/jannis-brandt-qLFJ0uCF9oY-unsplash.jpg");
+    background-size: cover;
+    background-position: right right;
+    background-repeat: no-repeat;
+    height: 92em;
+}
+
+.hero__section--equipo .hero__section__subtitle, .hero__section--equipo .hero__section__paragraph {
+    color: var(--cor-de-menu);
+}
+
+.hero__section--agradecimiento .hero__section__paragraph {
+    font-size: 2.2em;
+    font-style: italic;
+    font-weight: 300;
+}

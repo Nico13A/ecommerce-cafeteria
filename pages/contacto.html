@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Nunou</title>
+    <link rel="stylesheet" href="./../css/pages/contacto/estilos.css">
+    <script src="https://kit.fontawesome.com/7b6132a987.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="page-container">
+
+        <nav class="menu">
+            <ul class="menu__list">
+                <li class="menu__list__item menu__list__item--logo"><a href="./../index.html"><img src="../img/logo.png" alt="Logo de cafetería"></a></li>
+                <li class="menu__list__item"><a href="./menu.html">MENÚ</a></li>
+                <li class="menu__list__item"><a href="./cafe.html">NUESTRO CAFÉ</a></li>
+                <li class="menu__list__item"><a href="./nosotros.html">SOBRE NOSOTROS</a></li>
+                <li class="menu__list__item"><a href="./contacto.html">CONTACTO</a></li>
+                <li class="menu__list__item menu__list__item--carrito" id="carrito">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span id="contador"></span>
+                </li>
+            </ul>
+        </nav>
+
+        <main class="hero">
+        
+            <section class="hero__section">
+                <div class="hero__section__container">
+                    <h2 class="hero__section__title">Contacto</h2>
+                </div>
+            </section>
+
+            <section class="hero__section hero__section--form">
+                <div class="hero__section__container">
+                    <h6 class="hero__section__subtitle">¡Contáctanos!</h6>
+                    <p class="hero__section__description">Para cualquier consulta, te estaremos respondiendo a la brevedad.</p>
+                    <div class="hero__section__content">
+                        <form class="form" id="formulario">
+                            <div class="form__group">
+                                <div>
+                                    <input type="text" placeholder="Nombre y apellido" class="form__input" id="nombre" name="nombre">
+                                    <span id="nombre-error" class="form__error">Error de nombre</span>
+                                </div>
+                                <div>
+                                    <input type="email" placeholder="Email" class="form__input" id="correo" name="correo">
+                                    <span id="correo-error" class="form__error">Error de correo</span>
+                                </div>
+                            </div>
+                            <div class="form__group">
+                                <div>
+                                    <input type="tel" placeholder="Teléfono" class="form__input" id="telefono" name="telefono">
+                                    <span id="telefono-error" class="form__error">Error de telefono</span>
+                                </div>
+                                <div>
+                                    <div class="form__options">
+                                        <select name="motivo" id="motivo" class="form__select">
+                                            <option value="" selected disabled> Motivo</option>
+                                            <option value="Trabajo">Trabajo</option>
+                                            <option value="Ventas">Ventas</option>
+                                            <option value="Atención al cliente">Atención al cliente</option>
+                                            <option value="Reclamos de calidad">Reclamos de calidad</option>
+                                        </select>
+                                    </div>
+                                    <span id="motivo-error" class="form__error">Error de motivo</span>
+                                </div>
+                            </div>
+                            <div class="form__group">
+                                <div>
+                                    <textarea cols="95" rows="10" placeholder="Mensaje" class="form__textarea" id="mensaje"></textarea>
+                                    <span id="mensaje-error" class="form__error">Error de mensaje</span>
+                                </div>
+                            </div>
+                            <div class="form__actions">
+                                <input type="submit" value="Enviar" class="form__submit">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <div id="cart-shopping">
+            <div class="shop">
+                <div class="shop__close">
+                    <i class="fa-solid fa-x" id="close-button"></i>
+                    <h3>Carrito</h3>
+                </div>
+                <div class="shop__products">
+
+                </div>
+                <div class="shop__footer">
+                    <p>Total: <span id="total-a-pagar"></span></p>
+                    <button id="pagar">Finalizar compra</button>
+                    <a href="./carrito.html">Ir al carrito</a>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="footer__location">
+                <h4>Ubicación</h4>
+                <div class="footer__location__adress">
+                    <p>España 175, Cipolletti, Argentina</p>
+                    <a href="https://maps.app.goo.gl/BBpfXp3VfF6pP6ub7" target="_blank"><i class="fa-solid fa-location-pin"></i></a>
+                </div>
+            </div>
+            <div class="footer__social">
+                <ul class="footer__list">
+                    <li class="footer__list__item"><a href="https://www.instagram.com/cafenunou/?hl=es" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li class="footer__list__item"><a href="https://www.facebook.com/CafeNunou/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a></li>
+                    <li class="footer__list__item"><a href="https://api.whatsapp.com/send?phone=02996226141" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <script type="module" src="../js/app.js"></script>
+    <script type="text/javascript" src="../js/formulario.js"></script>
+</body>
+</html>

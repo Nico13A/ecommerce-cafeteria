@@ -1,0 +1,36 @@
+.nav {
+    background-color: var(--cor-de-menu);
+    height: 14em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.nav__link {
+    text-decoration: none;
+    font-size: 14px;
+    color: var(--cor-de-boton);
+}
+
+.nav__link:hover, .nav__link:hover i {
+    color: var(--cor-de-boton-hover);
+}
+
+.nav__link i {
+    padding-right: 2px;
+    color: var(--cor-de-boton);
+}
+
+.nav__container {
+    margin: 0 auto;
+}
+
+.nav__container-title {
+    font-size: 40px;
+    color: var(--cor-de-title);
+}

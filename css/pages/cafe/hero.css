@@ -1,0 +1,269 @@
+.page-container {
+    background-color: var(--cor-de-menu);
+    background-image: none;
+}
+
+.hero {
+    margin: 10em 0 0;
+}
+
+.hero__section {
+    width: 100%;
+    height: 46em;
+}
+
+.hero > .hero__section:first-child {
+    background-image: url("../../../img/sergey-kotenev-Qx_S2YE5I1o-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.hero__section__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.hero__section__title {
+    font-size: 4.4em;
+    line-height: 1.5;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 40px;
+    letter-spacing: 2px;
+    color: var(--cor-de-title);
+}
+
+.hero__section--nav {
+    height: auto;
+    margin: 5em 0;
+}
+
+.hero__section--nav .hero__section__container {
+    gap: 20px;
+}
+
+.hero__button {
+    width: 200px;
+    padding: 12px 0;
+    cursor: pointer;
+    background-color: var(--cor-de-boton);
+    color: var(--cor-de-menu);
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: "Roboto", sans-serif;
+}
+
+.hero__button:hover {
+    background-color: var(--cor-de-boton-hover);
+}
+
+.hero__button ul {
+    display: none;
+    position: absolute;
+    background-color: var(--cor-de-boton);
+    margin-top: 12px;
+    width: 200px;
+    border-radius: 10px;
+}
+
+.hero__button--peso:hover ul {
+    display: block;
+}
+
+.hero__button--peso ul li {
+    padding: 12px 0;
+    border-top: 1px solid var(--cor-de-menu);
+    text-transform: lowercase;
+}
+
+.hero__button--peso ul li:hover {
+    background-color: var(--cor-de-boton-hover);
+    border-radius: 10px 10px 0 0;
+}
+
+.hero__button--peso ul li:nth-child(2):hover {
+    border-radius: 0;
+}
+
+.hero__button--peso ul li:last-child:hover {
+    border-radius: 0 0 10px 10px;
+}
+
+.hero__section--products {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto 50px;
+    gap: 60px;
+
+}
+
+.hero__product {
+    width: 30%;
+    background-color: white;
+    height: 500px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--cor-de-boton);
+    color: var(--cor-de-title);
+    padding: 0 20px;
+}
+
+.hero__product__img {
+    width: 80%;
+    object-fit: contain;
+}
+
+.hero__product__title {
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.hero__product__price {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.hero__product__price span {
+    font-weight: 400;
+}
+
+.hero__product__actions {
+    display: flex;
+    gap: 20px;
+}
+
+.hero__product__action {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border: 1px solid var(--cor-de-boton);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.hero__product__action:hover {
+    transform: scale(1.2);
+    border-color: var(--cor-de-boton-hover);
+}
+
+.hero__product__action i {
+    font-size: 15px;
+    color: var(--cor-de-boton);
+}
+
+.hero__product__action:hover i {
+    color: var(--cor-de-boton-hover);
+}
+
+/* MODAL */
+.hero__section--modal {
+    height: auto;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #00000080;
+    z-index: 1000;
+}
+
+.modal {
+    z-index: 10000;
+    width: 604px;
+    background-color: var(--cor-de-menu);
+    border-radius: 10px;
+    display: flex;
+    padding: 20px;
+    height: 400px;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+
+.modal__close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    color: var(--cor-de-title);
+}
+
+.modal__img {
+    height: 60%;
+}
+
+.modal__content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: auto;
+}
+
+.modal__content__type {
+    color: var(--cor-de-menu);
+    background: var(--cor-de-boton);
+    font-weight: 400;
+    font-size: 16px;
+    padding: 1px 10px;
+    letter-spacing: 0;
+    border-radius: 5px;
+    line-height: 22.4px;
+    width: fit-content;
+}
+
+.modal__content__title {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: var(--cor-de-title);
+}
+
+.modal__content__description {
+    font-size: 14px;
+    color: var(--cor-de-subtitle);
+}
+
+.modal__content__enjoy {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--cor-de-title);
+}
+
+.modal__content__button {
+    border: none;
+    background-color: var(--cor-de-boton);
+    color: var(--cor-de-menu);
+    padding: 10px 20px;
+    width: fit-content;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.modal__content__button:hover {
+    background-color: var(--cor-de-boton-hover);
+}
