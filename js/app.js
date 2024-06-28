@@ -1,5 +1,11 @@
 import { eliminarDelCarrito, restarCantidadProducto, sumarCantidadProducto, calcularTotalAPagar } from "./carrito.js";
 
+/**
+ * Verifica si un producto ya existe en el carrito.
+ * @param {Object} producto 
+ * @param {Array} carrito 
+ * @returns {boolean} 
+ */
 const seRepiteProducto = (producto, carrito) => {
     let seRepite = false;
     let i = 0;
@@ -13,6 +19,10 @@ const seRepiteProducto = (producto, carrito) => {
     return seRepite;
 }
 
+/**
+ * Agrega un producto al carrito si no está repetido.
+ * @param {Object} producto 
+ */
 export const agregarProducto = producto => {
     let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
     if (!seRepiteProducto(producto, carrito)) {
@@ -21,6 +31,9 @@ export const agregarProducto = producto => {
     }
 }
 
+/**
+ * Actualiza el contador visual del carrito según los productos almacenados.
+ */
 export const contarCarrito = () => {
     const contador = document.getElementById('contador');
     let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
@@ -32,6 +45,9 @@ export const contarCarrito = () => {
     }
 }
 
+/**
+ * Actualiza visualmente el contenido del carrito en la interfaz de usuario.
+ */
 const agregarContenidoAlCarrito = () => {
     let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
     const contenedorProductos = document.querySelector('.shop__products');
@@ -129,13 +145,22 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     })
     
+    /**
+     * Abre el carrito de compras.
+     * Muestra el contenedor del carrito, bloquea el scroll de la página principal
+     * y actualiza el contenido del carrito.
+     */
     const abrirCarrito = () => {
         cartShopping.style.display = "flex";
         document.body.style.overflowY = "hidden";
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+        window.scroll({ top: 0, behavior: 'smooth' });
         agregarContenidoAlCarrito();
     }
     
+    /**
+     * Cierra el carrito de compras.
+     * Oculta el contenedor del carrito y restaura el scroll de la página principal.
+     */
     const cerrarCarrito = () => {
         cartShopping.style.display = "none";
         document.body.style.overflowY = "auto";
