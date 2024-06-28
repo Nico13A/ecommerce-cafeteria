@@ -1,5 +1,9 @@
 import { agregarProducto, contarCarrito } from "./app.js";
 
+/**
+ * Muestra un modal (ventana superpuesta a toda la página actual) con la información de un producto.
+ * @param { Object } producto
+ */
 const mostrarModal = producto => {
     const modalContainer = document.getElementById('modal-container');
     const modal = document.getElementById('modal');
@@ -43,11 +47,19 @@ const mostrarModal = producto => {
     modalContainer.appendChild(modal);
 }
 
+/**
+ * Oculta el modal configurando su estilo display a 'none'.
+ */
 const cerrarModal = () => {
     const modalContainer = document.getElementById('modal-container');
     modalContainer.style.display = 'none';
 }
 
+/**
+ * Muestra una lista de productos en el contenedor de productos, opcionalmente filtrando por tipo o peso.
+ * @param {Array} productos 
+ * @param {string} [filtro] 
+ */
 const mostrarProductos = (productos, filtro = '') => {
     const contenedorProductos = document.getElementById('productos');
     contenedorProductos.innerHTML = '';
@@ -130,6 +142,7 @@ const mostrarProductos = (productos, filtro = '') => {
 
 
 document.addEventListener('DOMContentLoaded', async () => {
+    
     const botonTodosLosProductos = document.getElementById('todosLosProductos');
     const botonCafeEnGrano = document.getElementById('cafeEnGrano');
     const botonCafeMolido = document.getElementById('cafeMolido');

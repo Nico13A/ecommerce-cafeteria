@@ -10,6 +10,7 @@
 <body>
     <div class="page-container">
 
+        <!-- Menú de navegación -->
         <nav class="menu">
             <ul class="menu__list">
                 <li class="menu__list__item menu__list__item--logo"><a href="./../index.html"><img src="../img/logo.png" alt="Logo de cafetería"></a></li>
@@ -24,14 +25,17 @@
             </ul>
         </nav>
 
+        <!-- Contenido principal -->
         <main class="hero">
         
+            <!-- Sección principal -->
             <section class="hero__section">
                 <div class="hero__section__container">
                     <h2 class="hero__section__title">Nuestro Café</h2>
                 </div>
             </section>
 
+            <!-- Navegación del contenido principal -->
             <section class="hero__section hero__section--nav">
                 <div class="hero__section__container">
                     <button class="hero__button" id="todosLosProductos">Todos</button>
@@ -48,9 +52,11 @@
                 </div>
             </section>
 
+            <!-- Productos -->
             <section class="hero__section hero__section--products" id="productos">
             </section>
 
+            <!-- Modal -->
             <section class="hero__section hero__section--modal" id="modal-container">
                 <div class="modal" id="modal">
                     <i class="fa-solid fa-x modal__close" id="modal-close"></i>
@@ -65,9 +71,9 @@
                 </div>
             </section>
 
-
         </main>
 
+        <!-- Modal de carrito de compras (invisible hasta que se cliquee sobre el carrito) -->
         <div id="cart-shopping">
             <div class="shop">
                 <div class="shop__close">
@@ -85,7 +91,9 @@
             </div>
         </div>
 
+        <!-- Pie de página -->
         <footer class="footer">
+            <!-- Ubicación -->
             <div class="footer__location">
                 <h4>Ubicación</h4>
                 <div class="footer__location__adress">
@@ -93,6 +101,7 @@
                     <a href="https://maps.app.goo.gl/BBpfXp3VfF6pP6ub7" target="_blank"><i class="fa-solid fa-location-pin"></i></a>
                 </div>
             </div>
+            <!-- Redes sociales -->
             <div class="footer__social">
                 <ul class="footer__list">
                     <li class="footer__list__item"><a href="https://www.instagram.com/cafenunou/?hl=es" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>

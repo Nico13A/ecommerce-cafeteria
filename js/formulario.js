@@ -17,6 +17,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const motivoError = document.getElementById('motivo-error');
     const mensajeError = document.getElementById('mensaje-error');
 
+    /**
+     * Muestra un mensaje de error y aplica estilos al elemento correspondiente.
+     * @param {HTMLElement} elemento 
+     * @param {string} mensaje
+     */
     const mostrarErrores = (elemento, mensaje) => {
         elemento.textContent = mensaje;
         elemento.style.display = "block";
@@ -29,6 +34,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     //const ocultarErrores = elemento => elemento.style.display = "none";
 
+    /**
+     * Oculta los mensajes de error y aplica estilos al elemento correspondiente para indicar éxito.
+     * @param {HTMLElement} elementoAOcultar 
+     * @param {HTMLElement} elementoAModificar 
+     */
     const ocultarErrores = (elementoAOcultar, elementoAModificar) => {
         elementoAOcultar.style.display = "none";
         elementoAModificar.classList.remove("form__input--error");
@@ -36,6 +46,12 @@ document.addEventListener('DOMContentLoaded', () => {
     };
     
 
+    /**
+     * Valida el campo de nombre. Retorna verdadero si el nombre es válido, falso en caso contrario.
+     * Muestra mensajes de error si el campo no cumple con las condiciones especificadas.
+     * @param {string} nombre
+     * @returns {boolean} 
+     */
     const validarNombre = nombre => {
         let validacion = false;
         if (nombre === "") {
@@ -50,6 +66,12 @@ document.addEventListener('DOMContentLoaded', () => {
         return validacion;
     }
 
+    /**
+     * Valida el campo de correo electrónico.
+     * Muestra mensajes de error si el campo está vacío o no tiene un formato válido de correo electrónico.
+     * @param {string} correo 
+     * @returns {boolean} 
+     */
     const validarCorreo = correo => {
         let validacion = false;
         if (correo === "") {
@@ -65,6 +87,12 @@ document.addEventListener('DOMContentLoaded', () => {
         return validacion;
     }
 
+    /**
+     * Valida el campo de teléfono.
+     * Muestra mensajes de error si el campo no está vacío y no tiene exactamente 10 dígitos numéricos.
+     * @param {string} telefono
+     * @returns {boolean} 
+     */
     const validarTelefono = telefono => {
         let validacion = false;
         if (telefono !== "" && !/^\d{10}$/.test(telefono)) {
@@ -76,6 +104,12 @@ document.addEventListener('DOMContentLoaded', () => {
         return validacion;
     }
 
+    /**
+     * Valida el campo de motivo.
+     * Muestra mensajes de error si el campo está vacío.
+     * @param {string} motivo 
+     * @returns {boolean} 
+     */
     const validarMotivo = motivo => {
         let validacion = false;
         if (motivo === "") {
@@ -87,6 +121,12 @@ document.addEventListener('DOMContentLoaded', () => {
         return validacion;
     };
 
+    /**
+     * Valida el campo de mensaje.
+     * Muestra mensajes de error si el campo está vacío.
+     * @param {string} mensaje 
+     * @returns {boolean} 
+     */
     const validarMensaje = mensaje => {
         let validacion = false;
         if (mensaje === "") {
@@ -98,6 +138,11 @@ document.addEventListener('DOMContentLoaded', () => {
         return validacion;
     };
 
+    /**
+     * Valida todos los campos del formulario antes de enviarlo.
+     * Muestra mensajes de error si algún campo no cumple con las validaciones requeridas.
+     * Si el formulario es válido, muestra una alerta de éxito y lo envía.
+     */
     const validarFormulario = () => {
         let esValido = true;
 

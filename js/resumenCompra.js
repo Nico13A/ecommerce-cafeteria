@@ -1,5 +1,8 @@
 import { calcularSubtotal, eliminarDelCarrito, restarCantidadProducto, sumarCantidadProducto, actualizarTotalAPagar } from "./carrito.js";
 
+/**
+ * Función para mostrar un resumen detallado de los productos en el carrito de compras.
+ */
 const mostrarResumenCompra = () => {
     let carrito = JSON.parse(localStorage.getItem('carrito'));
     const productos = document.querySelector('.hero__productos');
@@ -77,6 +80,9 @@ const mostrarResumenCompra = () => {
     actualizarTotalAPagar();
 }
 
+/**
+ * Función para mostrar un mensaje cuando el carrito de compras está vacío.
+ */
 const mostrarMensajeVacio = () => {
     const productos = document.querySelector('.hero__productos');
     const resumenCompra = document.querySelector('.hero__resumen');
