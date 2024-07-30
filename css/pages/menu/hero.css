@@ -1,11 +1,42 @@
 /* MENÚ */
 
 .hero {
+    margin: 10em 0 0;
+}
+/*
+.hero {
     max-width: 80em;
     margin: 10em auto 0;
     padding: 4em 0;
 }
+*/
+.hero > .hero__section:first-child {
+    width: 100%;
+    height: 46em;
+    background-image: url("../../../img/max-nayman-zEeJ99bLwH0-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
 
+.hero__section__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.hero__section__title {
+    font-size: 4.4em;
+    line-height: 1.5;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 40px;
+    letter-spacing: 2px;
+    color: var(--cor-de-title);
+}
+
+/*
 .hero__title {
     font-size: 4.2em;
     text-transform: uppercase;
@@ -15,12 +46,14 @@
     text-align: center;
     letter-spacing: 2px;
     color: var(--cor-de-title);
-}
-
+}*/
+/*
 .hero__section {
     margin-bottom: 2em;
 }
+*/
 
+/*
 .hero__section__title {
     font-size: 2.5em;
     font-weight: 900;
@@ -28,26 +61,95 @@
     margin-bottom: 0.8em;
     text-transform: uppercase;
     color: var(--cor-de-title);
+}*/
+
+.hero__section:not(:first-of-type) {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto 60px;
+}
+
+.hero__section--cafeteria {
+    padding: 90px 0 0;
+}
+
+.hero__section__subtitle {
+    font-size: 3em;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: var(--cor-de-title);
+    border-bottom: 3px solid var(--cor-de-title);
+}
+
+.hero__section__content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px 40px;
 }
 
 .hero__section__item {
+    /*
+    width: 40%;
     padding: 0 0 2em;
     border-bottom: 0.1em solid var(--cor-de-title);
     margin-bottom: 2em;
+    */
+    width: 380px;
+}
+
+.hero__section__item div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*margin-bottom: 10px;*/
 }
 
 .hero__section__item h4 {
     font-size: 1.8em;
     font-weight: 500;
-    margin-bottom: 10px;
     color: var(--cor-de-subtitle);
 }
 
+.hero__section__item__dots {
+    flex: 1;
+    margin: 0 10px;
+    border-bottom: 2px dotted var(--cor-de-title);
+}
+
+.hero__section__item span {
+    font-size: 16px;
+    font-weight: 700;
+}
+
 .hero__section__item p {
+    margin-top: 10px;
     font-size: 1.6em;
     color: var(--cor-de-subtitle);
 }
 
+.hero__section--franouccino .hero__section__item {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.hero__section--franouccino .hero__section__item h4 {
+    margin-bottom: 10px;
+}
+
+.hero__section--franouccino .hero__section__item span:first-child {
+    font-weight: 500;
+    font-style: italic;
+}
+
+.hero__section__item li {
+    font-size: 16px;
+    margin-left: 40px;
+    color: var(--cor-de-subtitle);
+    margin-bottom: 10px;
+}
+/*
 .hero__section__item ul, .hero__section--jugos ul, .hero__section--batidos ul, .hero__section--platos ul {
     display: flex;
     flex-direction: column;
@@ -56,10 +158,18 @@
 }
 
 .hero__section__item ul li, .hero__section--jugos ul li, .hero__section--batidos ul li, .hero__section--platos ul li {
-    font-size: 1.6em;
+    font-size: 16px;
     color: var(--cor-de-subtitle);
     font-style: italic;
     letter-spacing: 1px;
+}*/
+
+.hero__section--jugos .hero__section__item {
+    width: 100%;
+}
+
+.hero__section--jugos .hero__section__item__dots {
+    border-color: var(--cor-de-footer);
 }
 
 .hero__section--jugos ul li, .hero__section--platos ul li {
@@ -68,20 +178,30 @@
 
 .hero__section--jugos ul li h5, .hero__section--platos ul li h5 {
     font-size: 18px;
+    font-style: italic;
 }
-
+/*
 .hero__section--batidos ul li {
     color: var(--cor-de-subtitle);
     font-style: normal;
     font-size: 1.8em;
     font-weight: 500;
+}*/
+
+.hero__section--batidos .hero__section__item {
+    width: 100%;
 }
 
+.hero__section--batidos .hero__section__item span:first-child {
+    font-style: italic;
+    font-size: 18px;
+}
+/*
 .hero__sectiom__item--especial h4 {
     text-transform: uppercase;
     font-weight: 700;
-}
-
+}*/
+/*
 .hero__title--comida {
     margin-top: 40px;
-}
+}*/
